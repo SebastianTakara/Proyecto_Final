@@ -2,6 +2,7 @@ from django.shortcuts import render
 from Historia.forms import FormularioHistorias
 from Historia.models import Historias
 # Create your views here.
+#formulario para crear datos
 def historia(request):
 
       if request.method == 'POST':
@@ -24,4 +25,6 @@ def historia(request):
 
             miFormulario= FormularioHistorias() #Formulario vacio para construir el html
 
-      return render(request, "Historia/FormularioHistorias.html", {"miFormulario":miFormulario})
+      return render(request, "app/FormularioHistorias.html", {"miFormulario":miFormulario})
+
+#CRUD
