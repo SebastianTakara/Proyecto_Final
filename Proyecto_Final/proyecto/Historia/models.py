@@ -1,3 +1,4 @@
+from pyexpat import model
 from django.db import models
 
 # Create your models here.
@@ -7,3 +8,4 @@ class Historias(models.Model):
     cuerpo= models.CharField(max_length=500)
     autor= models.CharField(max_length=80)
     fecha= models.CharField(max_length=10)
+
